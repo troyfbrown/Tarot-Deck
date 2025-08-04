@@ -32,7 +32,8 @@ function CardDisplay(props) {
     }
     return(
         <div class="card">
-            <h3 class="card-title">{convertToRoman(props.id)}. {props.title}</h3>
+            <h3>{convertToRoman(props.id)}. {props.title}</h3>
+            <p>{props.subtitle}</p>
         </div>
     )
 }
